@@ -2,6 +2,9 @@ version: '3.4'
 services:
   java:
     image: adoptopenjdk/openjdk11:centos
+    env_file: .env
+    ports: 
+      - "8080:8080"
     volumes:
       - .:/opt/app
       - $HOME/.gradle:/root/.gradle

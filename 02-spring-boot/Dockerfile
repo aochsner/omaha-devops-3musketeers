@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk11:centos AS builder
-COPY . /opt/app/
 WORKDIR /opt/app
+COPY . /opt/app/
 RUN make _build
 
 FROM openjdk:11
