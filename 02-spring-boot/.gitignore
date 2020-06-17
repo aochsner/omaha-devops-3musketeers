@@ -1,8 +1,4 @@
-/vendor
-bin/
 .DS_Store
-*.out
-*.zip
 .env*
 !.env.template
 !.env.example

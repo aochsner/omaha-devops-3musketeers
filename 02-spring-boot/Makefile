@@ -3,7 +3,7 @@
 #				as service musketeers requires it
 DOCKER_RUN_ALPINE = docker run -v $(PWD):/opt/app -w /opt/app alpine
 
-APP_NAME=hello-world
+APP_NAME = hello-world
 VERSION = 0.0.1
 IMAGE_NAME ?= aochsner/$(APP_NAME):$(VERSION)
 COMPOSE_RUN_JAVA = docker-compose run --rm java
