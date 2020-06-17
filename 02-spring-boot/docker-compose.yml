@@ -1,0 +1,14 @@
+version: '3.4'
+services:
+  java:
+    image: adoptopenjdk/openjdk11:centos
+    volumes:
+      - .:/opt/app
+      - $HOME/.gradle:/root/.gradle
+    working_dir: /opt/app
+
+  musketeers:
+    image: flemay/musketeers
+    volumes:
+      - .:/opt/app
+    working_dir: /opt/app
